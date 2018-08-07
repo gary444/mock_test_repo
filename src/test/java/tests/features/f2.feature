@@ -1,8 +1,9 @@
 Scenario: Successful Login with Valid Credentials
 	Given User is on Home Page
+	But user has no internet connection
 	When User Navigate to LogIn Page
 	And User enters UserName and Password
-	Then Message displayed Login Successfully
+	* Message displayed Login Successfully
 
 Scenario: Successful LogOut
 	When User LogOut from the Application
